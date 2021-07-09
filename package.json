@@ -2,8 +2,9 @@
   "name": "njs-news",
   "version": "0.0.1",
   "description": "A sample Node.js News website with a REST API backend.",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
+    "start": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,5 +19,14 @@
     "API"
   ],
   "author": "Marothi Mahlake",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "body-parser": "^1.19.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.10"
+  }
 }
