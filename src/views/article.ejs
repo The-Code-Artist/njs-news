@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Node.js News</title>
+    <title><%- article.title.rendered %> - Node.js News</title>
     <link rel="stylesheet" href="/css/styles.css" />
     <link
       rel="stylesheet"
@@ -13,34 +13,25 @@
   </head>
   <body>
     <header class="header">
+      
       <div class="header-logo">
           <a href="/" title="Node.js News Home">Node.JS News</a>
       </div>
-
-      <!-- SEARCH -->
-      <%- include("./partials/search.ejs") %>
-
+      
     </header>
 
     <div class="wrapper">
-      <div class="news">
-        <% if (articles != null) { %>
-            <% articles.forEach(function (article, index) { %>
-            <a href="/article/<%- article.id %>" class="news-card">
-                <img
-                    src="<%- article.thumbnail_url %>"
-                    alt="<%- article.title.rendered %>"
-                />
+      <div class="article">
+        <% if (article != null) { %>
+            <div class="news-card">
                 <h2><%- article.title.rendered %></h2>
 
-                <p><%- article.excerpt.rendered %></p>
-            </a>
-
-            <% }) %>
+                <p><%- article.content.rendered %></p>
+            </div>
         <% } else { %>
             <h4>
                 <div class="news-card" style="text-align: center;">
-                    <%- response %>
+                    <h4>Article not found.</h4>
                 </div>
             </h4>
         <% } %> 

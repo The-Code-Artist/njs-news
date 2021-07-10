@@ -32,6 +32,11 @@ h2 {
   width: 80%;
 }
 
+.header-logo a {
+  color: #fff;
+  text-decoration: none;
+}
+
 .header-search {
   float: right !important;
   width: 20%;
@@ -66,10 +71,19 @@ h2 {
   color: #0a0a0a;
   background-color: #fff;
   padding: 20px;
+  -webkit-transition: ease 0.85s;
+  transition: ease 0.85s;
 }
 
 .news-card:hover {
   -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.16), 0 3px 3px rgba(0, 0, 0, 0.25);
           box-shadow: 0 3px 3px rgba(0, 0, 0, 0.16), 0 3px 3px rgba(0, 0, 0, 0.25);
+}
+
+.article {
+  background-color: #FFF;
+  max-width: 1300px;
+  margin: 0 auto;
+  pad: 2rem;
 }
 /*# sourceMappingURL=styles.css.map */
