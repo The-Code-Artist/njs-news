@@ -1,13 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Node.js News</title>
-    <link rel="stylesheet" href="/css/styles.css">
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://googleapis.com/css2?family=Source+Sans+Pro&display=swap"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-logo">Node.JS News</div>
+      <div class="header-search">
+        <form action=".">
+          <input type="search" name="search" id="search" placeholder="Search" />
+          <input type="submit" value="Search" />
+        </form>
+      </div>
+    </header>
+
+    <div class="wrapper">
+      <div class="news">
+        <% articles.forEach(function (article, index) { %>
+        <a href="#" class="news-card">
+          <h2><%- article.title.rendered %></h2>
+
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Blanditiis, nihil. Natus veniam illo, esse ipsa rerum aperiam. Non,
+            autem, quas reprehenderit facilis quis, ex pariatur ab eius et odio
+            nostrum!
+          </p>
+        </a>
+        <% }) %>
+      </div>
+    </div>
+  </body>
 </html>

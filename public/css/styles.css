@@ -1,1 +1,75 @@
-/* No CSS *//*# sourceMappingURL=styles.css.map */
+body {
+  margin: 0;
+  font-family: "Source Sans Pro", sans-serif;
+  background-color: #f6f6f6;
+}
+
+img {
+  max-width: 100%;
+}
+
+h2 {
+  font-size: 1.6rem;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space space-between;
+      -ms-flex-pack: space space-between;
+          justify-content: space space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  color: #fff;
+  background-color: #10555a;
+  margin-bottom: 10px;
+}
+
+.header-logo {
+  width: 80%;
+}
+
+.header-search {
+  float: right !important;
+  width: 20%;
+}
+
+.header-search input[type="search"] {
+  padding: 6px;
+  border: none;
+}
+
+.header-search input[type="submit"] {
+  float: right;
+  padding: 6px 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.wrapper {
+  padding: 0 1rem;
+}
+
+.news {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(360px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  grid-gap: 2rem;
+}
+
+.news-card {
+  text-decoration: none;
+  color: #0a0a0a;
+  background-color: #fff;
+  padding: 20px;
+}
+
+.news-card:hover {
+  -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.16), 0 3px 3px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 3px 3px rgba(0, 0, 0, 0.16), 0 3px 3px rgba(0, 0, 0, 0.25);
+}
+/*# sourceMappingURL=styles.css.map */
